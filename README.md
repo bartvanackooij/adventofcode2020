@@ -1,2 +1,4 @@
-# adventofcode2020
-Repo for the advent of code answers 2020 
+# Advent of code 2020
+
+Repo for the answers for the 2020 advent of code. 
+
