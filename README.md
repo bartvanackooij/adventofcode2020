@@ -1,4 +1,4 @@
-# Advent of code 2020
+# Advent of Code 2020
 
 Repository for the answers for the 2020 advent of code in Go*. 
 
