@@ -10,20 +10,25 @@ import (
 var sumGoal = 2020
 
 func main() {
-	fmt.Println("Answer for day 1, challenge 1 is", sumAndProductOfTwo(readInput()))
+	fmt.Println("Answer for day 1, challenge 2 is", sumAndProductOfThree(readInput()))
 }
 
-func sumAndProductOfTwo(data []string) int {
+func sumAndProductOfThree(data []string) int {
 	var answer int
 	// loop over all numbers
 	for _, firstInput := range data {
 		firstNumber, _ := strconv.Atoi(firstInput)
 		// for each number, loop again and show the sum.
-		for _, secondInput := range readInput() {
+		for _, secondInput := range data {
 			secondNumber, _ := strconv.Atoi(secondInput)
-			// check the goal
-			if firstNumber+secondNumber == sumGoal {
-				answer = firstNumber * secondNumber
+			// and again!
+			for _, thirdInput := range data {
+				thirdNumber, _ := strconv.Atoi(thirdInput)
+				// and check if matches the goal.
+				if (firstNumber + secondNumber + thirdNumber) == sumGoal {
+					answer = firstNumber * secondNumber * thirdNumber
+					break
+				}
 			}
 		}
 	}

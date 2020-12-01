@@ -6,14 +6,14 @@ import (
 	"testing"
 )
 
-func TestSumAndProductOfTwo(t *testing.T) {
+func TestSumAndProductOfThree(t *testing.T) {
 	// set test data
 	test := readTestInput()
 
 	// solution
-	correctSolution := 514579
+	correctSolution := 241861950
 
-	result := sumAndProductOfTwo(test)
+	result := sumAndProductOfThree(test)
 
 	if result != correctSolution {
 		t.Fatalf("Calculated sum is %d, expected %d", result, correctSolution)
