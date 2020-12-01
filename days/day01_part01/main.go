@@ -19,7 +19,7 @@ func sumAndProductOfTwo(data []string) int {
 	for _, firstInput := range data {
 		firstNumber, _ := strconv.Atoi(firstInput)
 		// for each number, loop again and show the sum.
-		for _, secondInput := range readInput() {
+		for _, secondInput := range data {
 			secondNumber, _ := strconv.Atoi(secondInput)
 			// check the goal
 			if firstNumber+secondNumber == sumGoal {
