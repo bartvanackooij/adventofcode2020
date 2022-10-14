@@ -6,4 +6,4 @@ Repository for the answers for the 2020 advent of code in Go*.
 
 \* first time coding with Go, so let's give it a go**! See how far we get.
 
-\** pun intended
+\** pun intende
